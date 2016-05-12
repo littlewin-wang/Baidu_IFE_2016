@@ -1,0 +1,59 @@
+body{
+	padding: 20px;
+	font-family: "微软雅黑";
+	font-size: 15px;
+}
+
+h2{
+	margin: 0;
+}
+
+.wholepage{
+	margin: 0 auto;
+	padding: 20px;
+	background: #eee;
+	border:	1px solid #999;
+	overflow: auto;
+	min-width: 600px;
+}
+
+.leftpage{
+	float: left;
+	padding: 20px;
+	width: 160px;
+	background: #fff;
+	border:	1px solid #999;
+}
+
+.teamlogo{
+	float: left;
+}
+
+.teamname{
+	float: top;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.rightpage{
+	float: right;
+	width: 120px;
+	background: #fff;
+	border:	1px solid #999;
+}
+
+.playerlogo{
+	display: block;
+	margin: 20px;
+	background: #fff;
+	border:	1px solid #999;
+}
+
+.middlepage{
+	padding: 20px;
+  	margin-left: 220px;
+	margin-right: 140px;
+	background: #fff;
+	border:	1px solid #999;
+}
