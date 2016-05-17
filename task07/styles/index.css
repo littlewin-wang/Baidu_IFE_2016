@@ -411,6 +411,7 @@ header {
   background-color: #eee;
   width: 45%;
   height: 9%;
+  font-family: "黑体";
 }
 
 .mainNine-right textarea {
@@ -421,6 +422,7 @@ header {
   width: 536px;
   height: 120px;
   resize: none;
+  font-family: "黑体";
 }
 
 .mainNine-right-submit {
@@ -429,4 +431,71 @@ header {
   height: 9%;
   border: none;
   background-color: #eee;
+  font-family: "黑体";
+}
+
+.contact {
+  height: 300px;
+  font-family: "黑体";
+  background-color: #33363F;
+  color: white;
+}
+
+.contact-p1 {
+  top: 20%;
+}
+
+.contact-p2 {
+  top: 23%;
+}
+
+.contact-email {
+  top: 35%;
+  width: 500px;
+  height: 40px;
+}
+
+.contact-email-input {
+  width: 85%;
+  border: none;
+  font-family: "黑体";
+  text-indent: 0.5em;
+}
+
+.contact-email-submit {
+  width: 15%;
+  border: none;
+  font-family: "黑体";
+  color: white;
+  background-color: #666;
+}
+
+.contact-link {
+  top: 50%;
+  width: 200px;
+  height: 50px; 
+}
+
+.contact-link-logo {
+  margin: 0 6%;
+  height: 45%;
+}
+
+.footer {
+  height: 50px;
+  background-color: #303039;
+  font-family: "黑体";
+  color: white;
+}
+
+.footer-div {
+  top: 40%;
+  left: 10%;
+}
+
+.footer-addr {
+  top: 40%;
+  left: 80%;
+  color: white;
+  text-decoration: none;
 }

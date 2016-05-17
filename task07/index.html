@@ -10,20 +10,20 @@
     <div class="container">
       <header class="w tc">
         <div class="header-left h40 ml50 fl f16">新世界</div>
-         <a class="header-login ml20 fr f12" href="#">登录</a>
+        <a class="header-login ml20 mr20 fr f12" href="#">登录</a>
         <ul class="header-right h f12 fr">
-          <li class="ml20 fl w60 header-right-active"><a href="">首页</a></li>
-          <li class="ml20 fl w60"><a href="">最新活动</a></li>
-          <li class="ml20 fl w60"><a href="">项目介绍</a></li>
-          <li class="ml20 fl w60"><a href="">爱心社区</a></li>
-          <li class="ml20 fl w60"><a href="">关于我们</a></li>
+          <li class="ml20 fl w60 header-right-active"><a href="#home">首页</a></li>
+          <li class="ml20 fl w60"><a href="#activity">最新活动</a></li>
+          <li class="ml20 fl w60"><a href="#project">项目介绍</a></li>
+          <li class="ml20 fl w60"><a href="#community">爱心社区</a></li>
+          <li class="ml20 fl w60"><a href="#about">关于我们</a></li>
         </ul>
       </header>
-      <div class="mainOne w pr">
+      <div id="home" class="mainOne w pr">
         <img class="w h" src="images/banner_img.jpg" alt="bannerImage">
         <p class="mainOne-title pa">Time of new life</p>
         <p class="mainOne-slogan pa f16">新时代，年轻的人们让我们一起<br>体验新生活，享受新生活</p>
-        <a class="mainOne-button pa tc lh200" href="#">开始体验</a>
+        <a class="mainOne-button pa tc lh200" href="#activity">开始体验</a>
       </div>
       <div class="mainTwo w tc bc">
         <div class="mainTwo-sector fl">
@@ -43,7 +43,7 @@
           <p class="mainTwo-sector-no-border mt30 f12">完善的培养机制，培养你<br>全新的世界观</p>
         </div>
       </div>
-      <div class="mainThree w tc bc">
+      <div id="activity" class="mainThree w tc bc">
         <img class="mt50 w80" src="images/big_logo.png" alt="mainThree logo pic">
         <p class="mt30">关于新世界，你不知道的还有什么</p>
       </div>
@@ -104,7 +104,7 @@
           <p class="mt5 cgray">奢侈消费大派送</p>
         </div>
       </div>
-      <div class="mainSix w bc cb tc f12">
+      <div id="project" class="mainSix w bc cb tc f12">
         <div class="mainSix-left h fl">
           <p class="mainSix-left-p1 pr">新世界</p>
           <p class="mainSix-left-p2 pr">TIME</p>
@@ -138,7 +138,7 @@
           <div class="mainSeven-right-div pr"></div>
         </div>
       </div>
-      <div class="mainEight w bc cb tc">
+      <div id="community" class="mainEight w bc cb tc">
         <p class="mainEight-p1 f20 pr">成为我们的志愿者</p>
         <div class="mainEight-div w30 pr bc"></div>
         <p class="mainEight-p2 f14 pr cgray lh150"> 
@@ -165,11 +165,23 @@
           <input class="mainNine-right-submit mt15 t2" type="submit" id="sub_btn" value="提交申请">
         </form>
       </div>
-      <div class="contact">
-        
+      <div id="about" class="contact w bc cb tc pr">
+        <p class="contact-p1 f20 pr">联系我们</p>
+        <p class="contact-p2 f14 pr">为了更好的获取我们最新的产品咨询，您可以留下您的电子邮箱快速订阅我们的产品资讯<br>也可以通过以下任何方式关注我们动态</p>
+        <div class="contact-email bc pr">
+          <input class="contact-email-input f16 h fl" type="email" placeholder="someone@email.com">
+          <input class="contact-email-submit f16 h fl" type="submit" value="提&nbsp;交">
+        </div>
+        <div class="contact-link bc pr">
+          <img class="contact-link-logo fl" src="images/qq_icon.png" alt="qq_icon">
+          <img class="contact-link-logo fl" src="images/weibo_icon.png" alt="weibo_icon">
+          <img class="contact-link-logo fl" src="images/twiter_icon.png" alt="twiter_icon">
+          <img class="contact-link-logo fl" src="images/blog_icon.png" alt="blog_icon">
+        </div>
       </div>
-      <div class="footer">
-        
+      <div class="footer f14 w bc cb pr">
+          <div class="footer-div pr fl">@2016新世界</div>
+          <a class="footer-addr pr fl" href="#top">Back to top</a>
       </div>
     </div>
   </body>
