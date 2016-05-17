@@ -42,7 +42,7 @@ body { background: #E9E5E2 ; }
 }
 
 .stage1 {
-	width:25%; 
+	width:66%; 
 	-moz-animation: stage1 2s ease-out;
 	-webkit-animation: stage1 2s ease-out;
 	background-color: #f674a4;
@@ -93,12 +93,12 @@ body { background: #E9E5E2 ; }
 	background-image: linear-gradient(top, #66b3cc, #5da3ba)	
 }
 
-@-moz-keyframes stage1 {0%  { width:0px;} 100%{ width:25%;}  }
+@-moz-keyframes stage1 {0%  { width:0px;} 100%{ width:66%;}  }
 @-moz-keyframes stage2 {0%  { width:0px;} 100%{ width:0%;}  }
 @-moz-keyframes stage3 {0%  { width:0px;} 100%{ width:0%;}  }
 @-moz-keyframes stage4 {0%  { width:0px;} 100%{ width:0%;}  }
 
-@-webkit-keyframes stage1 { 0%  { width:0px;} 100%{ width:25%;}  }
+@-webkit-keyframes stage1 { 0%  { width:0px;} 100%{ width:66%;}  }
 @-webkit-keyframes stage2 { 0%  { width:0px;} 100%{ width:0%;}  }
 @-webkit-keyframes stage3 { 0%  { width:0px;} 100%{ width:0%;}  }
 @-webkit-keyframes stage4 { 0%  { width:0px;} 100%{ width:0%;}  }
