@@ -14,3 +14,11 @@
 ###任务五：零基础HTML及CSS编码（二）
 - [源码](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task05 "source code")
 - [Demo](http://littlewin.info/Baidu_IFE/task05/ "demo")
+
+###任务六：通过HTML及CSS模拟报纸排版
+- [源码](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task06 "source code")
+- [Demo](http://littlewin.info/Baidu_IFE/task06/ "demo")
+
+###任务七：实现常见的技术产品官网的页面架构及样式布局
+- [源码](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task07 "source code")
+- [Demo](http://littlewin.info/Baidu_IFE/task07/ "demo")
