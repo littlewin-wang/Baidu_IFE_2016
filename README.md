@@ -22,3 +22,7 @@
 ###任务七：实现常见的技术产品官网的页面架构及样式布局
 - [源码](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task07 "source code")
 - [Demo](http://littlewin.info/Baidu_IFE/task07/ "demo")
+
+###任务八：响应式网格（栅格化）布局
+- [源码](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task08 "source code")
+- [Demo](http://littlewin.info/Baidu_IFE/task08/ "demo")
