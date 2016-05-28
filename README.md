@@ -40,3 +40,11 @@
 ###任务十四：面向零基础的JavaScript代码编写（二）
 - [源码](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task14 "source code")
 - [Demo](http://littlewin.info/Baidu_IFE/task14/ "demo")
+
+###任务十五：零基础JavaScript编码（三）
+- [源码](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task15 "source code")
+- [Demo](http://littlewin.info/Baidu_IFE/task15/ "demo")
+
+###任务十六：零基础JavaScript编码（四）
+- [源码](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task16 "source code")
+- [Demo](http://littlewin.info/Baidu_IFE/task16/ "demo")
