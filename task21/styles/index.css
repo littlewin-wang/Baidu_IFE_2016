@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica";
+}
+
+body > div {
+  margin: 10px;
+}
+
+#tagIn {
+  display: inline-block;
+  font-family: "Helvetica";
+  font-size: 13px;
+  color: #343434;
+  min-width: 150px;
+  height: 20px;
+  background: #fbfbfb;
+  border: 1px solid #cccdcf;
+  padding: 8px 10px;
+  box-shadow: inset 0 2px 3px #e8e8e8;
+}
+
+#tagContainer {
+  height: 75px;
+}
+
+#tagContainer div {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #94E0F3;
+  margin:5px 5px;
+  padding: 0 5px;
+}
+
+#tagContainer div:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+#tagContainer div:hover:before {
+  content: "点击删除";
+}
+
+#hobbyIn {
+  resize: none;
+  font-family: "Helvetica";
+  font-size: 13px;
+  color: #343434;
+  background: #fbfbfb;
+  border: 1px solid #cccdcf;
+  padding: 8px 10px;
+  box-shadow: inset 0 2px 3px #e8e8e8;
+}
+
+#hobbyBtn {
+  font-family: "Helvetica";
+  font-size: 13px;
+}
+
+#hobbyContainer div {
+  display: inline-block;
+  height: 30px;
+  line-height: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #94E0F3;
+  margin:5px 5px;
+  padding: 0 5px;
+}
+
+#hobbyContainer div:hover {
+  background-color: red;
+  cursor: pointer;
+}
+
+#hobbyContainer div:hover:before {
+  content: "点击删除";
+}
