@@ -1,0 +1,32 @@
+body {
+  font-family: "微软雅黑";
+}
+
+.container {
+  width: 400px;
+  margin: 10px auto;
+}
+
+.container h4 {
+  text-align: center;
+}
+
+.container p {
+  font-size: 14px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.arrow {
+  display: inline-block;
+  margin-right: 6px;
+}
+
+.down {
+  width: 0;
+  height: 0;
+  border-top: 10px solid #6898c2;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  cursor: pointer;
+}
