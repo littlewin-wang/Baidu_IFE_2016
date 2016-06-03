@@ -30,3 +30,15 @@ body {
   border-right: 5px solid transparent;
   cursor: pointer;
 }
+
+.margin-5 {
+  margin-left: 5px;
+}
+
+.margin-50 {
+  margin-left: 50px;
+}
+
+.item {
+  margin-left: 10px;
+}
