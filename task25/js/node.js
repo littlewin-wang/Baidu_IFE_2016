@@ -4,7 +4,7 @@ function Node(data) {
   this.children = [];
 
   var newNode = document.createElement("div");
-  newNode.className = "item"
+  newNode.className = "item";
   var newArrow = document.createElement("div");
   newArrow.className = "arrow down";
   var newTitle = document.createElement("span");
@@ -25,12 +25,17 @@ function Node(data) {
   newNode.appendChild(newAdd);
   newNode.appendChild(newRemove);
 
-  this.treeElement = newNode;
+  var newTreeNode = document.createElement("div");
+  newTreeNode.className = "treeNode";
+  newTreeNode.appendChild(newNode);
+
+  this.treeElement = newTreeNode;
+  this.treeElement.fromNode = this;
 }
  
 function Tree(data) {
   var node = new Node(data);
-  node.treeElement.removeChild(node.treeElement.lastChild)
+  node.treeElement.lastChild.removeChild(node.treeElement.lastChild.lastChild);
   this._root = node;
 }
  
@@ -74,18 +79,31 @@ Tree.prototype.add = function(data, toData, traversal) {
 
   if (parent) {
     parent.children.push(child);
-    parent.treeElement.appendChild(child.treeElement)
     child.parent = parent;
   } else {
     throw new Error('Cannot add node to a non-existent parent.');
   }
 };
+
+Tree.prototype.addChild = function(data, parent) {
+  if (data) {
+    var child = new Node(data);
+
+    if (parent) {
+      parent.children.push(child);
+      child.parent = parent;
+      parent.treeElement.appendChild(child.treeElement);
+    } else {
+      throw new Error('Cannot add node to a non-existent parent.');
+    }
+  }
+};
  
 Tree.prototype.remove = function(data, fromData, traversal) {
   var tree = this,
-  parent = null,
-  childToRemove = null,
-  index;
+      parent = null,
+      childToRemove = null,
+      index;
 
   var callback = function(node) {
     if (node.data === fromData) {
@@ -102,13 +120,24 @@ Tree.prototype.remove = function(data, fromData, traversal) {
       throw new Error('Node to remove does not exist.');
     } else {
       childToRemove = parent.children.splice(index, 1);
-      parent.treeElement.removeChild(parent.treeElement.getElementsByClassName("item")[index]);
     }
   } else {
     throw new Error('Parent does not exist.');
   }
 
   return childToRemove;
+};
+
+Tree.prototype.removeChild = function(child) {
+  if (child) {
+    child.parent.treeElement.removeChild(child.treeElement);
+
+    for(var i = 0, len = child.parent.children.length; i < len; i++) {
+      if(child.parent.children[i] == child) {
+        child.parent.children.splice(i, 1);
+      }
+    }
+  }
 };
  
 function findIndex(arr, data) {

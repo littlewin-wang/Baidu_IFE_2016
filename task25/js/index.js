@@ -14,22 +14,19 @@ function addEvent(element, type, handler) {
 // ===============================新建实例=============================
 var tree = new Tree("前端大全");
 document.getElementById("treeArea").appendChild(tree._root.treeElement)
-tree.add('HTML5', '前端大全', tree.traverseBF);
-tree.add('语义化', 'HTML5', tree.traverseBF);
-tree.add('结构和样式分离', 'HTML5', tree.traverseBF);
-tree.add('CSS3', '前端大全', tree.traverseBF);
-tree.add('JavaScript', '前端大全', tree.traverseBF);
+tree.addChild('HTML5', tree._root);
+tree.addChild('CSS3', tree._root);
+tree.addChild('JavaScript', tree._root);
 
 addEvent(tree._root.treeElement, "click", function (e) {
   var target = e.target || e.srcElement;
 
-  var targetItem = target.parentNode.getElementsByTagName("span")[0].innerHTML;
-  var parentItem = target.parentNode.parentNode.getElementsByTagName("span")[0].innerHTML;
+  var targetNode = target.parentNode.parentNode.fromNode;
 
   if (target.className == "add") {
-    tree.add(prompt("请输入子结点的内容："), targetItem, tree.traverseBF);
+    tree.addChild(prompt("请输入子结点的内容："), targetNode);
   }
   else if (target.className == "delete") {
-    tree.remove(targetItem, parentItem, tree.traverseBF);
+    tree.removeChild(targetNode);
   }
 });

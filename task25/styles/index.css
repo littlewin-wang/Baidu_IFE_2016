@@ -39,6 +39,14 @@ body {
   margin-left: 50px;
 }
 
-.item {
+.treeNode {
   margin-left: 10px;
+}
+
+.add, .delete{
+  display: none;
+}
+
+.item:hover>.add, .item:hover>.delete{
+  display: inline-block;
 }
