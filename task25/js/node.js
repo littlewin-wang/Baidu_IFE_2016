@@ -6,7 +6,7 @@ function Node(data) {
   var newNode = document.createElement("div");
   newNode.className = "item";
   var newArrow = document.createElement("div");
-  newArrow.className = "arrow down";
+  newArrow.className = "arrow empty";
   var newTitle = document.createElement("span");
   newTitle.className = "node-title";
   newTitle.innerHTML = data;
@@ -84,20 +84,6 @@ Tree.prototype.add = function(data, toData, traversal) {
     throw new Error('Cannot add node to a non-existent parent.');
   }
 };
-
-Tree.prototype.addChild = function(data, parent) {
-  if (data) {
-    var child = new Node(data);
-
-    if (parent) {
-      parent.children.push(child);
-      child.parent = parent;
-      parent.treeElement.appendChild(child.treeElement);
-    } else {
-      throw new Error('Cannot add node to a non-existent parent.');
-    }
-  }
-};
  
 Tree.prototype.remove = function(data, fromData, traversal) {
   var tree = this,
@@ -126,18 +112,6 @@ Tree.prototype.remove = function(data, fromData, traversal) {
   }
 
   return childToRemove;
-};
-
-Tree.prototype.removeChild = function(child) {
-  if (child) {
-    child.parent.treeElement.removeChild(child.treeElement);
-
-    for(var i = 0, len = child.parent.children.length; i < len; i++) {
-      if(child.parent.children[i] == child) {
-        child.parent.children.splice(i, 1);
-      }
-    }
-  }
 };
  
 function findIndex(arr, data) {
