@@ -28,6 +28,8 @@
 
 [任务十六：零基础JavaScript编码（四）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task16 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task16/ "demo")
 
-[任务十六：零基础JavaScript编码（五）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task17 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task17/ "demo")
+[任务十七：零基础JavaScript编码（五）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task17 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task17/ "demo")
 
-[任务十六：基础JavaScript练习（四）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task21 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task21/ "demo")
+[任务二十一：基础JavaScript练习（四）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task21 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task21/ "demo")
+
+[任务二十五：JavaScript和树（四）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task25 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task25/ "demo")
