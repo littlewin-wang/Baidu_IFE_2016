@@ -58,6 +58,7 @@ body {
 
 .add, .delete{
   display: none;
+  margin-left: 5px;
 }
 
 .item:hover>.add, .item:hover>.delete{

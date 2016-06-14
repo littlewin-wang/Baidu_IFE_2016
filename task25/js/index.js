@@ -57,7 +57,13 @@ Node.prototype.toggleFold = function(isFolded) {
 var tree = new Tree("前端大全");
 document.getElementById("treeArea").appendChild(tree._root.treeElement)
 tree.addChild('HTML5', tree._root);
+tree.addChild('语义化', tree._root.children[0]);
+tree.addChild('格式严谨', tree._root.children[0]);
+tree.addChild('结构分离', tree._root.children[0]);
 tree.addChild('CSS3', tree._root);
+tree.addChild('盒模型', tree._root.children[1]);
+tree.addChild('动画', tree._root.children[1]);
+tree.addChild('2D/3D转换', tree._root.children[1]);
 tree.addChild('JavaScript', tree._root);
 
 addEvent(tree._root.treeElement, "click", function (e) {
@@ -74,4 +80,50 @@ addEvent(tree._root.treeElement, "click", function (e) {
   } else if (target.className == "arrow down") {
     targetNode.toggleFold(true);
   }
+});
+
+addEvent(document.getElementById("searchDF"), "click", function (e) {
+  var text = document.getElementById("searchIn").value.trim();
+  if (text == "") {
+    document.getElementById("searchOut").innerHTML = "请输入查询内容！";
+    return;
+  }
+
+  var hitCnt = 0;
+
+  callback = function(node) {
+    if (node.data === text) {
+      node.treeElement.childNodes[0].style.color = "blue";
+      node.parent.toggleFold(false);
+      hitCnt++;
+    } else {
+      node.treeElement.childNodes[0].style.color = "black";
+    }
+  };
+
+  tree.contains(callback,tree.traverseDF);
+  document.getElementById("searchOut").innerHTML = "共发现" + hitCnt + "处";
+});
+
+addEvent(document.getElementById("searchBF"), "click", function (e) {
+  var text = document.getElementById("searchIn").value.trim();
+  if (text == "") {
+    document.getElementById("searchOut").innerHTML = "请输入查询内容！";
+    return;
+  }
+
+  var hitCnt = 0;
+
+  callback = function(node) {
+    if (node.data === text) {
+      node.treeElement.childNodes[0].style.color = "blue";
+      node.parent.toggleFold(false);
+      hitCnt++;
+    } else {
+      node.treeElement.childNodes[0].style.color = "black";
+    }
+  };
+
+  tree.contains(callback,tree.traverseBF);
+  document.getElementById("searchOut").innerHTML = "共发现" + hitCnt + "处";
 });
