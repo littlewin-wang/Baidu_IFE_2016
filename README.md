@@ -33,3 +33,7 @@
 [任务二十一：基础JavaScript练习（四）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task21 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task21/ "demo")
 
 [任务二十五：JavaScript和树（四）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task25 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task25/ "demo")
+
+[任务二十八：行星与飞船（三）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task28 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task28/ "demo")
+
+[任务二十九：表单（一）单个表单项的检验](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task29 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task29/ "demo")
