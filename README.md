@@ -37,3 +37,5 @@
 [任务二十八：行星与飞船（三）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task28 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task28/ "demo")
 
 [任务二十九：表单（一）单个表单项的检验](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task29 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task29/ "demo")
+
+[任务三十：表单（二）多个表单项的动态校验](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task30 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task30/ "demo")
