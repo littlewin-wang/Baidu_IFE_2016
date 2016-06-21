@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Baidu_IFE_Task_28</title>
+  <link rel="stylesheet" href="styles/index.css">
+</head>
+<body>
+  <div id="main">
+  <div id="scene">
+    <div id="star"></div>
+  </div>
+  <div id="log1">
+    <table id="table" border="1">
+      <tr>
+        <th>飞船</th>
+        <th>动力系统</th>
+        <th>能源系统</th>
+        <th>当前飞行状态</th>
+        <th>剩余能耗</th>
+      </tr>
+    </table>
+    <div id="log"></div>
+  </div>
+
+  <div id="control">
+    <div id="controlcreate">
+      动力系统选择：
+      <label><input name="power" checked="true" type="radio" value="" />前进号(速率30px/s，能耗5%/s)</label> 
+      <label><input name="power" type="radio" value="" />奔腾号(速率50px/s，能耗7%/s)</label> 
+      <label><input name="power" type="radio" value="" />超越号(速率80px/s，能耗9%/s)</label> 
+    <br>
+    能源系统选择：
+      <label><input name="energy" checked="true" type="radio" value="" />劲量型(补充能源速度2%/s)</label> 
+      <label><input name="energy" type="radio" value="" />光能型(补充能源速度3%/s)</label> 
+      <label><input name="energy" type="radio" value="" />永久型(补充能源速度4%/s)</label>
+    <br>
+      <button id="btn">建造新飞船</button>
+    </div>
+    
+  </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
