@@ -41,3 +41,6 @@
 [任务三十：表单（二）多个表单项的动态校验](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task30 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task30/ "demo")
 
 [任务三十一：表单（三）联动](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task31 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task31/ "demo")
+
+[任务三十二：表单（四）实现表单自动生成工厂](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task32 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task32/ "demo")
+
