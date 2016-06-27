@@ -1,0 +1,49 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+table {
+	position:relative;
+	margin: 30px;
+	width: 1200px;
+}
+table td {
+	position: relative;
+	vertical-align: top;
+	padding: 5px 10px;
+}
+table tr td:first-child {
+	width: 100px;
+	line-height: 40px;
+	text-align: right;
+}
+table tr td+td input {
+	display: block;
+	width: 520px;
+	height: 40px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	padding-left: 10px;
+}
+table tr td+td input:focus {
+	box-shadow: 1px 1px 3px blue;
+}
+#submit {
+	padding: 10px;
+	position: absolute;
+	right: 50%;
+	width: 80px;
+	height: 40px;
+	color: #fff;
+	background-color: #2f79ba;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+#submit:hover {
+	background-color: #23527b;
+}
+span {
+	color: #aaa;
+	font-size: 14px;
+}
