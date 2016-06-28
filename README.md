@@ -44,3 +44,4 @@
 
 [任务三十二：表单（四）实现表单自动生成工厂](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task32 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task32/ "demo")
 
+[任务三十三：听指令的小方块（一）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task33 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task33/ "demo")
