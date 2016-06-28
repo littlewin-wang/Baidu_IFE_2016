@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  text-align: center;
+  width: 100%;
+}
+
+table {
+  margin: 50px auto 20px auto;
+}
+
+td {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+}
+
+#sep {
+  margin: 0 auto;
+  width: 500px;
+  height: 10px;
+  background: #ddd;
+}
+
+.Top {
+  background: red;
+  border-top: 12px solid blue;
+}
+
+.Right {
+  background: red;
+  border-right: 12px solid blue;
+}
+
+.Bottom {
+  background: red;
+  border-bottom: 12px solid blue;
+}
+
+.Left {
+  background: red;
+  border-left: 12px solid blue;
+}
