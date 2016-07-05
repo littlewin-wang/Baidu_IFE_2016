@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body, html {
+  text-align: center;
+  width: 100%;
+}
+
+table {
+  margin: 50px auto 20px auto;
+}
+
+td {
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #ccc;
+}
+
+.Top {
+  background: red;
+  border-top: 12px solid blue;
+}
+
+.Right {
+  background: red;
+  border-right: 12px solid blue;
+}
+
+.Bottom {
+  background: red;
+  border-bottom: 12px solid blue;
+}
+
+.Left {
+  background: red;
+  border-left: 12px solid blue;
+}
+
+.control-group{
+  width: 300px;
+  margin: 0 auto;
+}
+
+#row-id {
+  background-color: #aaa;
+  color: #fff;
+  float: left;
+  line-height: 20px;
+  font-size: 12px;
+  width: 12px;
+  height: 200px;
+  overflow: hidden;
+  text-align: center; 
+}
+
+#cmd-area {
+  background-color: #000;
+  color: darkgreen;
+  font-weight: bold;
+  margin-left: 5px;
+  line-height: 20px;
+  font-size: 16px;
+  width: 280px;
+  height: 200px;
+}
