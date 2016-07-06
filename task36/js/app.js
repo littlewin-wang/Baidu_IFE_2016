@@ -31,34 +31,78 @@
       setDirection(itemNow.item, direction[d]);
   }
 
-  function itemGo(dir){
+  function itemGo(dir, action){
     switch(dir){
       case "Left":
-        if(itemNow.X > 1){
-          itemNow.X--;
-          var item = getItem(itemNow.X, itemNow.Y);
-          itemSetter(item);
+        if(itemNow.X > 1) {
+          var newX = itemNow.X - 1;
+          var item = getItem(newX, itemNow.Y);
+          if(action == "move") {
+            if(item.className != "Wall") {
+              itemNow.X--;
+              itemSetter(item);
+            } else {
+              console.log("Can not go through wall");
+            }
+          } else if (action == "build") {
+            item.className = "Wall";
+          } else {
+            console.log("Action illegal")
+          }   
         }
         break;
       case "Top":
-        if(itemNow.Y > 1){
-          itemNow.Y--;
-          var item = getItem(itemNow.X, itemNow.Y);
-          itemSetter(item);
+        if(itemNow.Y > 1) {
+          var newY = itemNow.Y - 1;
+          var item = getItem(itemNow.X, newY);
+          if(action == "move") {
+            if(item.className != "Wall") {
+              itemNow.Y--;
+              itemSetter(item);
+            } else {
+              console.log("Can not go through wall");
+            }
+          } else if (action == "build") {
+            item.className = "Wall";
+          } else {
+            console.log("Action illegal")
+          }
         }
         break;
       case "Right":
         if(itemNow.X < 10){
-          itemNow.X++;
-          var item = getItem(itemNow.X, itemNow.Y);
-          itemSetter(item);
+          var newX = itemNow.X + 1;
+          var item = getItem(newX, itemNow.Y);
+          if(action == "move") {
+            if(item.className != "Wall") {
+              itemNow.X++;
+              itemSetter(item);
+            } else {
+              console.log("Can not go through wall");
+            }
+          } else if (action == "build") {
+            item.className = "Wall";
+          } else {
+            console.log("Action illegal")
+          }
         }
         break;
       case "Bottom":
         if(itemNow.Y < 10){
-          itemNow.Y++;
-          var item = getItem(itemNow.X, itemNow.Y);
-          itemSetter(item);
+          var newY = itemNow.Y + 1;
+          var item = getItem(itemNow.X, newY);
+          if(action == "move") {
+            if(item.className != "Wall") {
+              itemNow.Y++;
+              itemSetter(item);
+            } else {
+              console.log("Can not go through wall");
+            }
+          } else if (action == "build") {
+            item.className = "Wall";
+          } else {
+            console.log("Action illegal")
+          }
         }
         break;
     }
@@ -69,7 +113,7 @@
     console.log(cmd);
     switch(cmd) {
       case "GO":
-        itemGo(itemNow.item.className);
+        itemGo(itemNow.item.className, "move");
         break;
       case "TUN LEF":
         calDirection(-1);
@@ -81,39 +125,46 @@
         calDirection(2);
         break;
       case "TRA LEF":
-        itemGo("Left");
+        itemGo("Left", "move");
         break;
       case "TRA TOP":
-        itemGo("Top");
+        itemGo("Top", "move");
         break;
       case "TRA RIG":
-        itemGo("Right");
+        itemGo("Right", "move");
         break;
       case "TRA BOT":
-        itemGo("Bottom");
+        itemGo("Bottom", "move");
         break;
       case "MOV LEF":
         setDirection(itemNow.item,"Left");
         itemNow.Dir = 3;
-        itemGo(itemNow.item.className);
+        itemGo(itemNow.item.className, "move");
         break;
       case "MOV TOP":
         setDirection(itemNow.item,"Top");
         itemNow.Dir = 0;
-        itemGo(itemNow.item.className);
+        itemGo(itemNow.item.className, "move");
         break;
       case "MOV RIG":
         setDirection(itemNow.item,"Right");
         itemNow.Dir = 1;
-        itemGo(itemNow.item.className);
+        itemGo(itemNow.item.className, "move");
         break;
       case "MOV BOT":
         setDirection(itemNow.item,"Bottom");
         itemNow.Dir = 2;
-        itemGo(itemNow.item.className);
+        itemGo(itemNow.item.className, "move");
+        break;
+      case "BUILD":
+        itemGo(itemNow.item.className, "build");
         break;
       default:
-        console.log("Input error");
+        if(/^BRU /.test(cmd)) {
+
+        } else {
+          console.log("Input error");
+        }
     }
   }
 
@@ -122,6 +173,7 @@
   var inputs = document.getElementById("cmd-area");
   var rstBtn = document.getElementById("reset");
   var rowId = document.getElementById("row-id");
+  var randBtn = document.getElementById("rand");
   
   inputs.addEventListener('keyup', function() {
     rowHasChange();
@@ -131,6 +183,20 @@
     var top = inputs.scrollTop;
     rowId.scrollTop = top;
   })
+
+  function random(min, max) {
+    var range = max - min;
+    var rand = Math.random();
+    return(min + Math.round(rand*range))
+  }
+
+  function randomWall() {
+    var randX = random(1,10);
+    var randY = random(1,10);
+    if(getItem(randX, randY).className != "Wall") {
+      getItem(randX, randY).className = "Wall";
+    }
+  }
 
   function rowHasChange() {
     var value = inputs.value;
@@ -150,6 +216,8 @@
   })
 
   goBtn.addEventListener('click', cmdCheck);
+
+  randBtn.addEventListener('click', randomWall);
 
   function cmdCheck() {
     var value = inputs.value;
