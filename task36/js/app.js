@@ -31,7 +31,7 @@
       setDirection(itemNow.item, direction[d]);
   }
 
-  function itemGo(dir, action){
+  function itemGo(dir, action, color){
     switch(dir){
       case "Left":
         if(itemNow.X > 1) {
@@ -46,8 +46,14 @@
             }
           } else if (action == "build") {
             item.className = "Wall";
+          } else if (action == "bru") {
+            if(item.className == "Wall") {
+              item.style.backgroundColor = color;
+            } else {
+              console.log("Not Wall");
+            }
           } else {
-            console.log("Action illegal")
+            console.log("Action illegal");
           }   
         }
         break;
@@ -64,6 +70,12 @@
             }
           } else if (action == "build") {
             item.className = "Wall";
+          } else if (action == "bru") {
+            if(item.className == "Wall") {
+              item.style.backgroundColor = color;
+            } else {
+              console.log("Not Wall");
+            }
           } else {
             console.log("Action illegal")
           }
@@ -82,6 +94,12 @@
             }
           } else if (action == "build") {
             item.className = "Wall";
+          } else if (action == "bru") {
+            if(item.className == "Wall") {
+              item.style.backgroundColor = color;
+            } else {
+              console.log("Not Wall");
+            }
           } else {
             console.log("Action illegal")
           }
@@ -100,6 +118,12 @@
             }
           } else if (action == "build") {
             item.className = "Wall";
+          } else if (action == "bru") {
+            if(item.className == "Wall") {
+              item.style.backgroundColor = color;
+            } else {
+              console.log("Not Wall");
+            }
           } else {
             console.log("Action illegal")
           }
@@ -161,10 +185,51 @@
         break;
       default:
         if(/^BRU /.test(cmd)) {
-
+          var color = cmd.split(" ")[1];
+          if(checkColor(color)) {
+            itemGo(itemNow.item.className, "bru", color);
+          } else {
+            console.log("Input color error");
+          }
+        } else if (/^MOV TO /.test(cmd)) {
+          var toX = cmd.split(" ")
         } else {
           console.log("Input error");
         }
+    }
+  }
+
+  function checkColor(color)
+  {
+    var pattern = /^#[0-9a-fA-F]{6}$/
+    if(color.match(pattern) == null) {
+      return false;
+    } else {
+      return true;
+    }
+  }
+
+  function findPath(toX, toY) {
+    var arr = []
+    for(var m = 1 ; m <= 10; m++) {
+      arr[m-1] = [];
+      for(var n = 1 ; n <= 10; n++) {
+        if(getItem(n, m).className == "Wall"){
+          arr[m-1][n-1] = 1;
+        } else {
+          arr[m-1][n-1] = 0;
+        } 
+      }
+    }
+
+    var map = Maze(arr);
+    //起始点 结束点 是否斜角
+    var parent = map.FindPath(Point(itemNow.X, itemNow.Y), Point(toX, toY), false);
+
+    while (parent != null)
+    {
+      cc.log(parent.x + ", " + parent.y);
+      parent = parent.ParentPoint;
     }
   }
 
@@ -237,7 +302,7 @@
   function command(cmd, i) {
     var arr = cmd.split(" ");
     var steps = arr[arr.length-1];
-    if(!isNaN(steps)){ //鏈�鍚庝竴浣嶆槸鏁板瓧
+    if(!isNaN(steps)){ //最后一位是数字
       arr.pop();
       var currentCmd = arr.join(" ");
     } else {
