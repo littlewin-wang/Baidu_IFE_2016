@@ -192,7 +192,9 @@
             console.log("Input color error");
           }
         } else if (/^MOV TO /.test(cmd)) {
-          var toX = cmd.split(" ")
+          var toX = cmd.split(" ")[2].split(",")[0];
+          var toY = cmd.split(" ")[2].split(",")[1];
+          goPath(toX, toY);
         } else {
           console.log("Input error");
         }
@@ -209,8 +211,8 @@
     }
   }
 
-  function findPath(toX, toY) {
-    var arr = []
+  function goPath(toX, toY) {
+    var arr = [];
     for(var m = 1 ; m <= 10; m++) {
       arr[m-1] = [];
       for(var n = 1 ; n <= 10; n++) {
@@ -223,14 +225,20 @@
     }
 
     var map = Maze(arr);
-    //起始点 结束点 是否斜角
-    var parent = map.FindPath(Point(itemNow.X, itemNow.Y), Point(toX, toY), false);
-
-    while (parent != null)
-    {
-      cc.log(parent.x + ", " + parent.y);
-      parent = parent.ParentPoint;
+    var parent = map.findPath(Point(itemNow.X, itemNow.Y), Point(toX, toY), false);
+    if(parent) {
+      var path = [];
+      while (parent != null)
+      {
+        path.push(parent);
+        parent = parent.parentPoint;
+      }
+      path.reverse();
+      console.log(path);
+    } else {
+      console.log("Can not find a path");
     }
+    delete map;
   }
 
   setDirection(itemNow.item, direction[itemNow.Dir]);
@@ -258,8 +266,12 @@
   function randomWall() {
     var randX = random(1,10);
     var randY = random(1,10);
-    if(getItem(randX, randY).className != "Wall") {
-      getItem(randX, randY).className = "Wall";
+    if(!((randX == itemNow.X)&&(randY == itemNow.Y))){
+      if(getItem(randX, randY).className != "Wall") {
+        getItem(randX, randY).className = "Wall";
+      }
+    } else {
+      console.log("This position is hold by Item.")
     }
   }
 
