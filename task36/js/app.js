@@ -234,7 +234,25 @@
         parent = parent.parentPoint;
       }
       path.reverse();
-      console.log(path);
+
+      var i = 1,
+          len = path.length;
+      var actions = setInterval(function() {
+        if(i < len) {
+          if(path[i].y == (itemNow.Y + 1)) {
+            itemMove("MOV BOT");
+          } else if(path[i].y == (itemNow.Y - 1)) {
+            itemMove("MOV TOP");
+          } else if(path[i].x == (itemNow.X + 1)) {
+            itemMove("MOV RIG");
+          } else if(path[i].x == (itemNow.X - 1)) {
+            itemMove("MOV LEF");
+          }
+          ++i;
+        } else {
+          clearInterval(actions);
+        }
+      }, 500)
     } else {
       console.log("Can not find a path");
     }
@@ -314,7 +332,7 @@
   function command(cmd, i) {
     var arr = cmd.split(" ");
     var steps = arr[arr.length-1];
-    if(!isNaN(steps)){ //最后一位是数字
+    if(!isNaN(steps)){ //鏈�鍚庝竴浣嶆槸鏁板瓧
       arr.pop();
       var currentCmd = arr.join(" ");
     } else {
