@@ -68,7 +68,7 @@ body { background: #E9E5E2 ; }
 }
 
 .stage3 {
-	width:0%;
+	width:10%;
 	-moz-animation: stage3 2s ease-out;
 	-webkit-animation: stage3 2s ease-out;
 	background-color: #a1ce5b;
@@ -95,10 +95,10 @@ body { background: #E9E5E2 ; }
 
 @-moz-keyframes stage1 {0%  { width:0px;} 100%{ width:100%;}  }
 @-moz-keyframes stage2 {0%  { width:0px;} 100%{ width:100%;}  }
-@-moz-keyframes stage3 {0%  { width:0px;} 100%{ width:0%;}  }
+@-moz-keyframes stage3 {0%  { width:0px;} 100%{ width:10%;}  }
 @-moz-keyframes stage4 {0%  { width:0px;} 100%{ width:0%;}  }
 
 @-webkit-keyframes stage1 { 0%  { width:0px;} 100%{ width:100%;}  }
 @-webkit-keyframes stage2 { 0%  { width:0px;} 100%{ width:100%;}  }
-@-webkit-keyframes stage3 { 0%  { width:0px;} 100%{ width:0%;}  }
+@-webkit-keyframes stage3 { 0%  { width:0px;} 100%{ width:10%;}  }
 @-webkit-keyframes stage4 { 0%  { width:0px;} 100%{ width:0%;}  }
