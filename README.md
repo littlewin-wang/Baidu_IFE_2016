@@ -51,3 +51,5 @@
 [任务三十五：听指令的小方块（三）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task35 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task35/ "demo")
 
 [任务三十六：听指令的小方块（四）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task36 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task36/ "demo")
+
+[任务三十七：UI组件之浮出层](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task37 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task37/ "demo")
