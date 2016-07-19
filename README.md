@@ -8,7 +8,7 @@
 
 [任务四：定位和居中问题](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task04 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task04/ "demo")
 
-[任务五：零基础HTML及CSS编码（二](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task05 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task05/ "demo")
+[任务五：零基础HTML及CSS编码（二）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task05 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task05/ "demo")
 
 [任务六：通过HTML及CSS模拟报纸排版](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task06 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task06/ "demo")
 
