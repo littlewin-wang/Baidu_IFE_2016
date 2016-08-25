@@ -54,4 +54,8 @@
 
 
 ####第三阶段任务 - 综合练习HTML，CSS，JavaScript
-[任务三十七：UI组件之浮出层](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task37 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task37/ "demo")
+~~[任务三十七：UI组件之浮出层](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task37 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task37/ "demo")~~
+
+(步入组件化生产大坑，往后组件化产品都会用Vue.js来实现)
+
+[任务三十七：UI组件之浮出层](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task37_by_Vuejs "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task37_by_Vuejs/ "demo")
