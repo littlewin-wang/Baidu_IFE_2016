@@ -69,8 +69,13 @@
 }
 
 .modal-wrapper {
-  display: table-cell;
-  vertical-align: middle;
+  position: absolute;
+  width: 400px;
+  height: 300px;
+  left: 50%;
+  top: 50%;
+  margin-left: -200px;
+  margin-top: -150px;
 }
 
 .modal-container {
