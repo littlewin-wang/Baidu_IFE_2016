@@ -59,3 +59,5 @@
 (步入组件化生产大坑，往后组件化产品都会用Vue.js来实现)
 
 [任务三十七：UI组件之浮出层](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task37_by_Vuejs "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task37_by_Vuejs/ "demo")
+
+[任务三十八+三十九：UI组件之排序表格 + 任务三十九：UI组件之冻结行列表格](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task38+39 "source code") ｜ [Demo](http://littlewin.info/Baidu_IFE/task38+39/ "demo")
