@@ -1,8 +1,7 @@
 ### 要求
 
-[任务三十八：UI组件之排序表格](http://ife.baidu.com/task/detail?taskId=38)
+[任务四十一：UI组件之日历组件（二）](http://ife.baidu.com/task/detail?taskId=41)
 
-[任务三十九：UI组件之冻结行列表格](http://ife.baidu.com/task/detail?taskId=39)
 
 ### 实现（Vue.js）
 
