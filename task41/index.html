@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>task42</title>
+    <link rel="stylesheet" href="css/styles.css">
+  </head>
+  <body>
+
+    <div id="app">
+      <calendar-demo :date.sync="time"></calendar-demo>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/1.0.26/vue.min.js"></script>
+    <script src="js/app.js"></script>
+    <script>
+      var calendar = window.components.calendar
+
+      new Vue({
+        el: '#app',
+        data:{
+          time: new Date().getTime()
+        },
+        components:{
+          'calendar-demo': calendar
+        }
+      })
+    </script>
+  </body>
+</html>
