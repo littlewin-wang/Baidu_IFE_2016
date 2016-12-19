@@ -61,3 +61,7 @@
 [任务三十七：UI组件之浮出层](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task37_by_Vuejs "source code") ｜ [Demo](http://littlewin-wang.github.io/Baidu_IFE/task37_by_Vuejs/ "demo")
 
 [任务三十八+三十九：UI组件之排序表格 + UI组件之冻结行列表格](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task38+39 "source code") ｜ [Demo](http://littlewin-wang.github.io/Baidu_IFE/task38+39/ "demo")
+
+[任务四十一：UI组件之日历组件（二）](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task41 "source code") ｜ [Demo](http://littlewin-wang.github.io/Baidu_IFE/task41/ "demo")
+
+[任务五十：微型调查问卷平台](https://github.com/littlewin-wang/Baidu_IFE/tree/master/task50 "source code") ｜ [Demo](http://littlewin-wang.github.io/Baidu_IFE/task50/ "demo")
