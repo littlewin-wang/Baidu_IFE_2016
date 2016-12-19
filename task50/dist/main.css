@@ -1,0 +1,10 @@
+.gui-transition {
+  transition: all .5s ease;
+  overflow: hidden;
+}
+/* .gui-enter 定义进入的开始状态 */
+/* .gui-leave 定义离开的结束状态 */
+.gui-enter, .gui-leave {
+    height: 0;
+    opacity: 0;
+}
